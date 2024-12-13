@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Music.js">
+    <link rel="stylesheet" href="function.java">
+    <link rel="shortcut icon" href="Picture/Musicaa.png" type="">
+    <link rel="stylesheet" href="login.html">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!--sidebar + navigation-->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            <a href="">
+                <img src="picture/Musica.png" alt="Logo">
+            </a>
+        </div>
+        <div class="player">
+            <div class="song-info">
+                <h2 class="song-title"></h2>
+                <p class="artist-name"></p>
+            </div>
+            <div class="player-controls">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="bx bxs-home-alt-2"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="library.html">
+                        <span class="bx bx-library"></span>
+                        <span>Your Library</span>
+
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--navigation-->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="playlist.html">
+                        <span class="bx bxs-playlist"></span>
+                        <span>Create Playlist</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        
+
+        <div class="media-player">
+            <div class="controls">
+                <button class="control-btn shuffle"><i class="bx bx-shuffle"></i></button>
+                <button class="control-btn previous"><i class="bx bx-skip-previous"></i></button>
+                <button class="control-btn play-pause"><i class="bx bx-play"></i></button>
+                <button class="control-btn next"><i class="bx bx-skip-next"></i></button>
+                <button class="control-btn repeat"><i class="bx bx-repeat"></i></button>
+            </div>
+            <div class="progress-container">
+                <span class="current-time">0:00</span>
+                <input type="range" class="progress-bar" value="0" min="0" max="100">
+                <span class="total-time">4:26</span>
+            </div>
+            <div class="volume-container">
+                <i class="bx bx-volume-full"></i>
+                <input type="range" class="volume-slider" min="0" max="100" value="50">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+
+
+    <!--container-->
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="prev-next-buttons">
+                <button type="button" class="bx bx-chevron-left" onclick="location.href=''"></button>
+                <button type="button" class="bx bx-chevron-right" onclick="location.href='library.html'"></button>
+
+            </div>
+
+            <div class="navbar">
+                <button type="button" onclick="location.href='login.html'">Login</button>
+                <button type="button" onclick="location.href='Signup.html'">Sign up</button>
+            </div>
+        </div>
+
+
+
+        <!--playlist you can also play here your music-->
+
+        <div class="Musica-playlists list">
+            <h2>English Song</h2>
+            <div class="list">
+                <div class="item">
+                    <img src="picture/Die with a smile.jpg" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>Die with a smile</h4>
+                    <p>Bruno Mars & <br>Lady Gaga</p>
+                    <audio src="Music/die-with-a-smile.mp3"></audio>
+                </div>
+
+                <div class="item">
+                    <img class=billie src="picture/Billie.jpg" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>Birds of a feather</h4>
+                    <p>Billie Eilish</p>
+                    <audio id="birdsofafeather" src="Music/birds-of-a-feather.mp3"></audio>
+                </div>
+
+                <div class="item">
+                    <img src="picture/sabrina.jpg" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>Espresso</h4>
+                    <p>Sabrina Carpenter</p>
+                    <audio id="Espresso" src="Music/Espresso.mp3"></audio>
+                </div>
+                <div class="item">
+                    <img src="Picture/APT.jpg" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>Apt. </h4>
+                    <p>ROSE & Bruno Mars</p>
+                    <audio id="apt" src="Music/apt.mp3"></audio>
+                </div>
+                <div class="item">
+                    <img src="picture/end-of-beginning.png" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>End of Beginning</h4>
+                    <p>Djo</p>
+                    <audio id="end-of-beginning" src="Music/End-Of-Beginning.mp3"></audio>
+                </div>
+                <div class="item">
+                    <img src="picture/Old-Love.jpg" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>Old Love</h4>
+                    <p>Yuji, Putri dahlia</p>
+                    <audio id="Old-Love" src="Music/Old Love.mp3"></audio>
+                </div>
+                <div class="item">
+                    <img src="picture/You-and-Me.jpg" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>You and Me</h4>
+                    <p>Lifehouse</p>
+                    <audio id="You-and-Me" src="Music/You&Me.mp3"></audio>
+                </div>
+                <div class="item">
+                    <img src="picture/Waiting Room.jpg" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>Waiting Room</h4>
+                    <p>Phoebe Bridgers</p>
+                    <audio id="Waiting Room" src="Music/Waiting Room.mp3"></audio>
+                </div>
+                <div class="item">
+                    <img src="picture/Cause You Have To.png" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>'Cause You Have To</h4>
+                    <p>LANY</p>
+                    <audio id="cause You Have To" src="Music/'Cause You Have To.mp3"></audio>
+                </div>
+
+                <div class="item">
+                    <img src="picture/May I Ask.jpg" alt="" width="150" height="150" />
+                    <div class="play">
+                        <button class="bx bx-play"></button>
+                    </div>
+                    <h4>May I Ask</h4>
+                    <p>Luke Chiang, Alexis Kim</p>
+                    <audio id="May I Ask" src="Music/May I Ask.mp3"></audio>
+                </div>
+            </div>
+
+            <div class="Philipines-playlists lists">
+                <h2>Pinoy Song</h2>
+                <div class="list">
+                    <div class="item">
+                        <img src="picture/Dilaw.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Dilaw</h4>
+                        <p>Maki</p>
+                        <audio id="Dilaw" src="Music/Dilaw.mp3"></audio>
+                    </div>
+                    <div class="item">
+                        <img src="picture/Sining.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Sining</h4>
+                        <p>Dionela</p>
+                        <audio id="Sining" src="Music/Sining.mp3"></audio>
+                    </div>
+                    <div class="item">
+                        <img src="picture/buko.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Buko</h4>
+                        <p>Jireh Lim</p>
+                        <audio id="buko" src="Music/Buko.mp3"></audio>
+
+                    </div>
+                    <div class="item">
+                        <img src="picture/Tingin.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Tingin</h4>
+                        <p>Cup of Joe</p>
+                        <audio id="Tingin" src="Music/Tingin.mp3"></audio>
+                    </div>
+                    <div class="item">
+                        <img src="picture/Sinta.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Sinta</h4>
+                        <p>Rob Deniel </p>
+                        <audio id="Sinta" src="Music/Sinta.mp3"></audio>
+                    </div>
+                    <div class="item">
+                        <img src="picture/Museo.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Museo</h4>
+                        <p>Eliza Maturan </p>
+                        <audio id="Museo" src="Music/Museo.mp3"></audio>
+                    </div>
+                    <div class="item">
+                        <img src="picture/Ikot.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Ikot</h4>
+                        <p>Over October </p>
+                        <audio id="Ikot" src="Music/Ikot.mp3"></audio>
+                    </div>
+                    <div class="item">
+                        <img src="picture/Kusapiling.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Kusapiling</h4>
+                        <p>Anthony Meneses </p>
+                        <audio id="Kusapiling" src="Music/Kusapiling.mp3"></audio>
+                    </div>
+                    <div class="item">
+                        <img src="picture/711.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>711</h4>
+                        <p>Toneejay </p>
+                        <audio id="711" src="Music/711.mp3"></audio>
+                    </div>
+                    <div class="item">
+                        <img src="picture/AHS.jpg" alt="" width="150" height="150" />
+                        <div class="play">
+                            <button class="bx bx-play"></button>
+                        </div>
+                        <h4>Panalangin</h4>
+                        <p>Apo Hiking Society</p>
+                        <audio id="AHS" src="Music/Panalangin.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+</body>
